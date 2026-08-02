@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voice Refocus</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="panel">
+    <header class="header">
+      <div class="brand">
+        <img class="logo" src="icons/icon48.png" alt="" width="28" height="28" />
+        <h1>Voice Refocus</h1>
+      </div>
+      <p class="tag">Remove distracting background noise</p>
+    </header>
+    <section class="status-row">
+      <span id="statusDot" class="dot" aria-hidden="true"></span>
+      <span id="statusText">Off — open a video tab, then start</span>
+    </section>
+    <button id="toggleBtn" class="primary" type="button">Start on this tab</button>
+    <section class="controls" aria-label="Controls">
+      <label class="slider">
+        <div class="slider-top">
+          <span>Focus strength</span>
+          <span id="suppressionVal">70</span>
+        </div>
+        <input id="suppression" type="range" min="0" max="100" value="70" />
+      </label>
+    </section>
+    <p id="error" class="error" hidden></p>
+    <footer class="hint">
+      Runs privately on your device. Start playback first, then press Start.
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
