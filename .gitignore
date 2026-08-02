@@ -1,0 +1,25 @@
+.venv/
+.venv312/
+node_modules/
+.DS_Store
+demo/
+**/__pycache__/
+*.zip
+.cursor/
+
+# Dev / algorithm-named sources kept local only
+vendor/
+worklet/
+_icon_src/
+scripts/
+background.js
+offscreen.js
+offscreen.html
+offscreen/
+popup.js
+popup.html
+popup.css
+manifest.json
+icons/
+package.json
+package-lock.json

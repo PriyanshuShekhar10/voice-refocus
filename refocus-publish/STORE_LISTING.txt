@@ -1,0 +1,35 @@
+Chrome Web Store listing copy
+=============================
+
+Name: Voice Refocus - Remove Distracting Background Noise
+Short description (132 chars max):
+Hear speech clearly on any tab. Removes distracting background noise and music — privately, on your device.
+
+Detailed description:
+Voice Refocus helps you focus on what’s being said in videos and streams.
+
+• Remove distracting background noise and music
+• Keep dialogue and speech easier to follow
+• Works on YouTube and other sites with HTML5 video/audio
+• Processing stays on your device — audio is not uploaded
+
+How to use:
+1. Open a video and start playing
+2. Click the Voice Refocus icon
+3. Press “Start on this tab”
+4. Adjust Focus strength to taste
+
+Category: Productivity
+Language: English
+
+Permission justifications (for store form):
+• tabCapture — capture the current tab’s audio so Voice Refocus can reduce background noise
+• offscreen — keep audio processing running reliably while you browse
+• storage — remember your Focus strength setting
+• activeTab — start enhancement for the tab you’re viewing
+
+Single purpose:
+Enhance tab audio to make speech clearer by reducing distracting background noise.
+
+Official URL: https://voice.refocus.co.in
+Privacy policy URL: https://voice.refocus.co.in/privacy.html

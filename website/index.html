@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voice Refocus — Remove Distracting Background Noise</title>
+    <meta
+      name="description"
+      content="Chrome extension that reduces distracting background noise and music so you can focus on speech. Private, on-device processing."
+    />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="/">
+          <img src="assets/logo.png" alt="" width="36" height="36" />
+          <span>Voice Refocus</span>
+        </a>
+        <div class="nav-links">
+          <a class="hide-sm" href="#how">How it works</a>
+          <a class="hide-sm" href="#privacy">Privacy</a>
+          <a class="btn btn-primary" href="#get">Get the extension</a>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Chrome extension</p>
+          <h1>Voice Refocus</h1>
+          <p class="hero-lead">
+            Remove distracting background noise and music so you can hear what’s
+            actually being said — privately, on your device.
+          </p>
+          <div class="cta-row" id="get">
+            <a
+              class="btn btn-primary"
+              id="chromeLink"
+              href="https://chromewebstore.google.com/"
+              >Add to Chrome</a
+            >
+            <a class="btn btn-secondary" href="privacy.html">Privacy policy</a>
+          </div>
+          <p class="fine">
+            Free to start. Works on YouTube and other HTML5 video sites.
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="glow"></div>
+          <div class="popup-frame">
+            <div class="pf-brand">
+              <img src="assets/logo.png" alt="" />
+              <div>
+                <h2>Voice Refocus</h2>
+                <p class="pf-tag">Remove distracting background noise</p>
+              </div>
+            </div>
+            <div class="pf-status">
+              <span class="dot"></span>
+              <span>On — enhancing this tab</span>
+            </div>
+            <button class="pf-btn" type="button">Stop</button>
+            <div class="pf-slider">
+              <div class="row">
+                <span>Focus strength</span>
+                <span>70</span>
+              </div>
+              <div class="track"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section" id="how">
+        <h2>How it works</h2>
+        <p class="lead">
+          One click on the tab you’re watching. No account. No upload.
+        </p>
+        <div class="steps">
+          <article class="step">
+            <div class="num">01</div>
+            <h3>Play a video</h3>
+            <p>Open YouTube or any page with HTML5 video/audio and start playback.</p>
+          </article>
+          <article class="step">
+            <div class="num">02</div>
+            <h3>Start Voice Refocus</h3>
+            <p>Click the extension icon, then “Start on this tab.”</p>
+          </article>
+          <article class="step">
+            <div class="num">03</div>
+            <h3>Tune focus</h3>
+            <p>Raise Focus strength if noise still bleeds through; lower it if speech feels thin.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="screens">
+        <h2>What you get</h2>
+        <p class="lead">
+          Clearer speech when background beds and scores get in the way.
+        </p>
+        <div class="shots">
+          <article class="shot">
+            <div class="shot-inner">
+              <div>
+                <h3>Speech first</h3>
+                <p>
+                  Built for talks, explainers, interviews, and lectures where music
+                  is too stimulating.
+                </p>
+              </div>
+              <div class="wave" aria-hidden="true"></div>
+            </div>
+          </article>
+          <article class="shot">
+            <div class="shot-inner">
+              <div>
+                <h3>On-device</h3>
+                <p>
+                  Audio stays on your machine. Preferences are saved locally in
+                  Chrome.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="shot wide">
+            <div class="shot-inner">
+              <div>
+                <h3>Simple controls</h3>
+                <p>
+                  Start / stop on the current tab, plus one Focus strength slider.
+                  That’s it.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="privacy">
+        <div class="privacy-band">
+          <div>
+            <h2>Privacy, plainly</h2>
+            <p class="lead" style="margin-top: 0.5rem">
+              When you press Start, tab audio is processed locally. We don’t
+              require an account and we don’t upload your audio.
+            </p>
+          </div>
+          <a class="btn btn-secondary" href="privacy.html">Read privacy policy</a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>© <span id="year"></span> Voice Refocus · refocus.co.in</span>
+        <span>
+          <a href="privacy.html">Privacy</a>
+          ·
+          <a href="mailto:hello@refocus.co.in">hello@refocus.co.in</a>
+        </span>
+      </footer>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      // Replace with your Chrome Web Store listing URL after publish:
+      // document.getElementById("chromeLink").href = "https://chromewebstore.google.com/detail/...";
+    </script>
+  </body>
+</html>
