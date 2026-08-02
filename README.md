@@ -2,7 +2,7 @@
 
 Chrome extension that reduces distracting background noise and music so speech is easier to follow. Processing stays on your device.
 
-**Site:** [voice.refocus.co.in](https://voice.refocus.co.in) *(deploy the `website/` folder)*
+**Site:** [voice-refocus.vercel.app](https://voice-refocus.vercel.app) → custom domain [voice.refocus.co.in](https://voice.refocus.co.in) (see `website/DEPLOY.md`)
 
 ## Repo layout
 
