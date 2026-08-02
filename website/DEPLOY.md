@@ -1,36 +1,37 @@
-# Deploy voice.refocus.co.in
+# Deploy voice.refocus.co.in on Vercel
 
-Static site in this folder. No build step.
+Static site. No build step.
 
-## Option A — Cloudflare Pages (recommended)
+## 1) Deploy from GitHub (easiest)
 
-Your apex `refocus.co.in` is already on Cloudflare.
+1. Go to [vercel.com/new](https://vercel.com/new)
+2. Import `PriyanshuShekhar10/voice-refocus`
+3. Settings:
+   - **Framework Preset:** Other
+   - **Root Directory:** `website`  
+     *(or leave root and use the repo-level `vercel.json` that points at `website`)*
+   - **Build Command:** leave empty
+   - **Output Directory:** leave empty if Root Directory is `website`
+4. Deploy
 
-1. Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages**
-2. Upload this `website` folder, **or** connect a Git repo and set:
-   - Build command: *(none / empty)*
-   - Output directory: `website` (or `/` if the repo root is this folder)
-3. After the first deploy, open the project → **Custom domains**
-4. Add: `voice.refocus.co.in`
-5. Cloudflare will create the DNS record for you
+## 2) Custom domain
 
-Site URLs to use in Chrome Web Store:
-- Homepage: `https://voice.refocus.co.in`
-- Privacy policy: `https://voice.refocus.co.in/privacy.html`
-
-## Option B — Manual DNS + any static host
-
-1. Host the contents of `website/` (Netlify, GitHub Pages, S3, etc.)
-2. In Cloudflare DNS for `refocus.co.in`, add:
+1. Vercel project → **Settings → Domains** → add `voice.refocus.co.in`
+2. In Cloudflare DNS for `refocus.co.in`, add what Vercel shows, usually:
    - Type: `CNAME`
    - Name: `voice`
-   - Target: your host’s URL (e.g. `something.pages.dev`)
-   - Proxy: ON (orange cloud) if using Cloudflare Pages/proxy
+   - Target: `cname.vercel-dns.com` (or the exact target Vercel gives)
+   - Proxy status: **DNS only** (grey cloud) — recommended for Vercel
 
-## After Chrome Web Store approval
+## Store URLs
 
-Edit `index.html` and set the real listing URL on `#chromeLink`.
+- Homepage: `https://voice.refocus.co.in`
+- Privacy: `https://voice.refocus.co.in/privacy` (clean URL) or `/privacy.html`
 
-## Email
+## After Chrome approval
 
-Privacy page uses `hello@refocus.co.in`. Create that mailbox (or change both `index.html` and `privacy.html` to an address you monitor).
+Set the real Chrome Web Store link on the “Add to Chrome” button in `index.html`.
+
+## Contact
+
+`hello@refocus.co.in`
